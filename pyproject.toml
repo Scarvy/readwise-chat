@@ -1,0 +1,21 @@
+[project]
+name = "readwise-chat"
+version = "0.1.0"
+description = "Chat with your readwise library"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+ "httpx>=0.28.1",
+ "mcp>=1.1.1",
+ "python-dotenv>=1.0.1",
+]
+[[project.authors]]
+name = "Scott Carvalho"
+email = "scottcarvalho71@gmail.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+readwise-chat = "readwise_chat:main"
